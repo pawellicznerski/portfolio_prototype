@@ -144,10 +144,13 @@
 	section.clients {
 		background-color: rgba(15,131,255,0.1)
 	}
-	section.clients > .container > .col-md-3 >img{
-		margin: 5px;
+	section.clients > .container > .row {
+		display: flex;
+		align-items: center;
 	}
-
+	section.clients > .container > .row > .col-md-3 >img{
+		padding: 10px;
+	}
 	section.clients > .container > .row:last-child{
 		padding-bottom: 40px;
 	}
