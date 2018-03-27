@@ -122,3 +122,26 @@
 	section.expert-in > .expert-in_container > .row > .col-md-4 > p{
 		text-align: center;
 	}
+
+	section.latest-works {
+		padding: 30px 0;
+		background-color: #fff;
+	}
+
+	section.latest-works > .latest-works_container {
+		padding:0 150px 50px 150px;
+	}
+
+	section.latest-works > .latest-works_container > .row:first-child > h2 {
+		text-align: center;
+		padding-bottom: 30px;
+
+	}
+
+
+	section.latest-works > .latest-works_container > .row > .col-md-4 >div{
+		margin: 25px;
+		height: 285px;
+		width: 85%;
+		background-color: blue;
+	}
