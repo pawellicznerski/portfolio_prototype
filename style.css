@@ -3,15 +3,25 @@
 		margin:0;
 		padding:0;
 	}
+
 	body {
 		font-family: 'Roboto', sans-serif;
 	}
+
+	.container {
+	 padding:0 150px;
+ }
+
+ h2.title{
+	 text-align: center;
+	 padding: 50px 0;
+	 color: rgb(15,131,255);
+ }
 
 	section.cookie-info{
 		background-color: rgb(37, 72, 142);
 	}
 	section.cookie-info > .col-md-12 {
-		/*border: 1px solid red;*/
 		margin:auto;
 		padding: 8px 0;
 		display: flex;
@@ -19,27 +29,27 @@
 		align-items: center;
 	}
 
-	section.cookie-info > .col-md-12 > div {
+	section.cookie-info > .col-md-12 > span {
 		color: #fff;
 	}
 
 	section.cookie-info > .col-md-12 > button {
 		border-radius: 30px;
-		/*padding: 5px 20px 5px 20px;*/
-		/*border: 0;*/
 		margin-left: 2rem;
-		/*width: 150px;*/
+		width: 110px;
+		color: rgb(15,131,255);
+
 	}
 
 	section.header {
 		background: linear-gradient(45deg, rgba(15,131,255,0.95) 15%,rgba(15,131,255,0.85) 15%,rgba(15,131,255,0.85) 35%,rgba(15,131,255,0.8) 35%,rgba(15,131,255,0.95) 65%,rgba(15,131,255,1) 65%)
 	}
 
-	section.header > .header_container > .row:nth-child(1) > .col-md-12 {
+	section.header > .container > .row:nth-child(1) > .col-md-12 {
 		margin: 110px 0 70px 0;
 		text-align: center;
 	}
-	section.header > .header_container > .row:nth-child(1) > .col-md-12 > img {
+	section.header > .container > .row:nth-child(1) > .col-md-12 > img {
 		border-radius: 50%;
 		height: 150px;
 		width: 150px;
@@ -50,7 +60,7 @@
 		box-shadow: 0px 0px 29px 0px rgba(255,255,255,1);
 	}
 
-	section.header > .header_container > .row:nth-child(2) > .col-md-12 {
+	section.header > .container > .row:nth-child(2) > .col-md-12 {
 		color: #fff;
 		text-align: center;
 		font-size: 30px;
@@ -61,7 +71,7 @@
 		padding-right: 150px;
 	}
 
-	section.header > .header_container > .row:nth-child(3) > .col-md-12 {
+	section.header > .container > .row:nth-child(3) > .col-md-12 {
 		color: #fff;
 		text-align: center;
 		font-size: 15px;
@@ -71,77 +81,98 @@
 		margin-bottom: 40px;
 	}
 
-	section.header > .header_container > .row:nth-child(4) > .col-md-12 {
+	section.header > .container > .row:nth-child(4) > .col-md-12 {
 		text-align: center;
 		margin-bottom: 70px;
 	}
-	section.header > .header_container > .row:nth-child(4) > .col-md-12 > button {
+	section.header > .container > .row:nth-child(4) > .col-md-12 > button {
 		border-radius: 30px;
 		margin: auto;
 		width:120px;
+		color: rgb(15,131,255);
+
 	}
 
 	section.about-me{
 		background-color: #fff;
-		padding: 50px 0;
 	}
 
-	section.about-me > .about-me_container > .row:first-child > h2 {
-		text-align: center;
-		padding-bottom: 30px;
-	}
-
-	section.about-me > .about-me_container > .row:last-child > .col-md-12 {
+	section.about-me > .container > .row:last-child > .col-md-12 {
 		text-align: center;
 		padding:0 150px 50px 150px;
 	}
 
 	section.expert-in {
-		padding: 30px 0;
 		background-color: rgba(15,131,255,0.1)
 	}
 
-	section.expert-in > .expert-in_container {
-		padding:0 150px 50px 150px;
-	}
-
-	section.expert-in > .expert-in_container > .row:first-child > h2 {
-		text-align: center;
-	}
-
-	section.expert-in > .expert-in_container > .row > .col-md-4 > img{
+	section.expert-in > .container > .row > .col-md-4 > img{
 		display: block;
-		margin: 40px auto;
+		margin: 0 auto 30px auto;
 	}
 
-	section.expert-in > .expert-in_container > .row > .col-md-4 > h5{
+	section.expert-in > .container > .row > .col-md-4 > h5{
 		text-align: center;
 		margin: 20px auto;
 	}
 
-	section.expert-in > .expert-in_container > .row > .col-md-4 > p{
+	section.expert-in > .container > .row > .col-md-4 > p{
 		text-align: center;
+	}
+
+	section.expert-in > .container > .row:last-child{
+		padding-bottom: 40px;
 	}
 
 	section.latest-works {
-		padding: 30px 0;
+		/*padding: 30px 0;*/
 		background-color: #fff;
 	}
 
-	section.latest-works > .latest-works_container {
-		padding:0 150px 50px 150px;
-	}
-
-	section.latest-works > .latest-works_container > .row:first-child > h2 {
-		text-align: center;
-		padding-bottom: 30px;
-
-	}
-
-
-	section.latest-works > .latest-works_container > .row > .col-md-4 >div{
+	section.latest-works > .container > .row > .col-md-4 >div{
 		margin: 25px;
 		height: 285px;
 		width: 85%;
 		background-color: blue;
+	}
+
+	section.latest-works > .container > .row:last-child{
+		padding-bottom: 40px;
+	}
+
+
+	section.clients {
+		background-color: rgba(15,131,255,0.1)
+	}
+	section.clients > .container > .col-md-3 >img{
+		margin: 5px;
+	}
+
+	section.clients > .container > .row:last-child{
+		padding-bottom: 40px;
+	}
+
+	section.footer {
+			background: linear-gradient(45deg, rgba(15,131,255,0.95) 15%,rgba(15,131,255,0.85) 15%,rgba(15,131,255,0.85) 35%,rgba(15,131,255,0.8) 35%,rgba(15,131,255,0.95) 65%,rgba(15,131,255,1) 65%);
+			height: 100px;
+			display: flex;
+			align-items: center;
+
+	}
+
+	section.footer > .container  {
+		padding: 0;
+	}
+
+	section.footer > .container > .row >.col-md-9{
+		color: #fff;
+		text-align: right;
+	}
+
+
+	section.footer > .container > .row > .col-md-3 > button{
+		border-radius: 30px;
+		width: 110px;
+		color: rgb(15,131,255);
+
 	}
